@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TwitterClone</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+    <h1>TwitterClone</h1>
+    <nav>
+      <%= link_to 'Home', root_path %>
+      <%= link_to 'New Post', new_post_path %>
+    </nav>
+  </header>
+
+    <%= yield %>
+    <footer>
+    <p>© 2024 TwitterClone</p>
+  </footer>
+  
+
+  </body>
+</html>
